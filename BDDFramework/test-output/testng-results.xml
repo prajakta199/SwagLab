@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="5" failed="7" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-02T13:37:22 IST" name="Default suite" finished-at="2024-05-02T14:08:58 IST" duration-ms="1896384">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="TestRunner.feature(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" name="feature" class="TestRunner.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-05-02T13:37:22 IST" name="Default test" finished-at="2024-05-02T14:08:58 IST" duration-ms="1896384">
+      <class name="TestRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T13:37:22 IST" name="setUpClass" finished-at="2024-05-02T13:37:23 IST" duration-ms="1290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@29f95272]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpCucumber()[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T13:37:23 IST" name="setUpCucumber" finished-at="2024-05-02T13:37:23 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpCucumber -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T13:37:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-02T13:41:14 IST" duration-ms="230435" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Elements displayed on login page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User Name field is displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User Name field is displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at StepDefinition.LoginSteps.is_username_field_displayed(LoginSteps.java:99)
+at ✽.User Name is displayed(file:///D:/Prajakta/BDDFramework/src/test/resources/features/LoginPage.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T13:41:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-02T13:44:24 IST" duration-ms="189667" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T13:44:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-02T13:47:16 IST" duration-ms="172063" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter space in login fields credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T13:47:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-02T13:49:49 IST" duration-ms="153137" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Searchbox is visible expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Searchbox is visible expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at StepDefinition.LoginSteps.searchbox_is_visible(LoginSteps.java:141)
+at ✽.searchbox is visible(file:///D:/Prajakta/BDDFramework/src/test/resources/features/LoginPage.feature:42)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T13:49:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-02T13:52:31 IST" duration-ms="162079" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Elements displayed after login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ Drop down is present expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError:  Drop down is present expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at StepDefinition.LoginSteps.other_elements_displayed(LoginSteps.java:162)
+at ✽.Buttons displayed(file:///D:/Prajakta/BDDFramework/src/test/resources/features/LoginPage.feature:48)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T13:52:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-02T13:55:12 IST" duration-ms="161197" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User wants to sign out"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Clicked on Drop down Button expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Clicked on Drop down Button expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at StepDefinition.LoginSteps.clicks_on_drpdwn_button(LoginSteps.java:130)
+at ✽.user clicks Dropdown button(file:///D:/Prajakta/BDDFramework/src/test/resources/features/LoginPage.feature:52)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="feature(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T13:55:12 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2024-05-02T13:55:54 IST" duration-ms="41747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Elements displayed on login page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method signature="feature(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T13:55:54 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2024-05-02T13:58:28 IST" duration-ms="154388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method signature="feature(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T13:58:28 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2024-05-02T14:01:01 IST" duration-ms="152958" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter space in login fields credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method signature="feature(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T14:01:01 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2024-05-02T14:03:36 IST" duration-ms="155087" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Searchbox is visible expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Searchbox is visible expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at StepDefinition.LoginSteps.searchbox_is_visible(LoginSteps.java:141)
+at ✽.searchbox is visible(file:///D:/Prajakta/BDDFramework/src/test/resources/features/LoginPage.feature:42)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method signature="feature(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T14:03:36 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2024-05-02T14:06:16 IST" duration-ms="159463" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Elements displayed after login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ Drop down is present expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError:  Drop down is present expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at StepDefinition.LoginSteps.other_elements_displayed(LoginSteps.java:162)
+at ✽.Buttons displayed(file:///D:/Prajakta/BDDFramework/src/test/resources/features/LoginPage.feature:48)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method signature="feature(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T14:06:16 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2024-05-02T14:08:58 IST" duration-ms="161813" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User wants to sign out"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Clicked on Drop down Button expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Clicked on Drop down Button expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at StepDefinition.LoginSteps.clicks_on_drpdwn_button(LoginSteps.java:130)
+at ✽.user clicks Dropdown button(file:///D:/Prajakta/BDDFramework/src/test/resources/features/LoginPage.feature:52)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunner@6a78afa0]" started-at="2024-05-02T14:08:58 IST" name="tearDownClass" finished-at="2024-05-02T14:08:58 IST" duration-ms="912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,17 @@
+2024-05-02 16:15:29,253 INFO Steps [main] 36 - User is on login screen)
+2024-05-02 16:15:29,274 INFO Steps [main] 63 - Viewing all web elements present on Login page
+2024-05-02 16:15:32,387 INFO ControlActions_Android [main] 60 - Retrived element - [[AndroidDriver:  on ANDROID (2d52b0dc-d6eb-485a-be0b-9d3821631f84)] -> xpath: //android.widget.EditText[@content-desc='test-Username']] after waiting for PT20S seconds, element to be visible
+2024-05-02 16:15:32,728 INFO ControlActions_Android [main] 60 - Retrived element - [[AndroidDriver:  on ANDROID (2d52b0dc-d6eb-485a-be0b-9d3821631f84)] -> xpath: //android.widget.EditText[@content-desc='test-Password']] after waiting for PT20S seconds, element to be visible
+2024-05-02 16:16:32,884 ERROR ControlActions_Android [main] 63 - Error while waiting for visibility of element for PT20S seconds An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2d52b0dc-d6eb-485a-be0b-9d3821631f84, findElement {using=xpath, value=//*[@accesibilityID='test-LOGIN']}]
+Capabilities {appium:app: D:/Prajakta/demo.apk, appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:/Prajakta/demo.apk, appWaitActivity: *, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel 8 Pro API 34, fullReset: false, newCommandTimeout: 3000, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 2208x1840, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:noReset: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 74, appium:takesScreenshot: true, appium:viewportRect: {height: 1682, left: 0, top: 74, width: 2208}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2d52b0dc-d6eb-485a-be0b-9d3821631f84
+2024-05-02 16:16:54,150 INFO Steps [main] 36 - User is on login screen)
+2024-05-02 16:16:56,262 INFO ControlActions_Android [main] 136 - Element - By.xpath: //android.widget.EditText[@content-desc='test-Username'] is clickable
+2024-05-02 16:16:56,539 INFO ControlActions_Android [main] 139 - Clicked on element - By.xpath: //android.widget.EditText[@content-desc='test-Username']
+2024-05-02 16:16:56,542 INFO ControlActions_Android [main] 94 - Atrue
+2024-05-02 16:16:57,751 INFO ControlActions_Android [main] 97 - Element - By.xpath: //android.widget.EditText[@content-desc='test-Username'] is interactable
